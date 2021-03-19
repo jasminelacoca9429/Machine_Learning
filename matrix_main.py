@@ -1,0 +1,17 @@
+from HW3.matrix import Matrix
+
+m1 = Matrix([[1, 2, 3], [1, 1, 1]], (2, 3))
+m2 = Matrix([[2, 1, 8], [1, 5, 1]], (2, 3))
+m3 = Matrix([[6, 1, 1], [4, -2, 5], [2, 8, 7]], (3, 3))
+print(m1 + m2)
+print(m1 - m2)
+print(m1 * m3)
+print(m1 == m2)
+print(len(m1))
+print(m1)
+print(m1.transpose())
+print(m3.det())
+print(m1.is_matrix())
+print(m1.sort('in'))
+m1.save('m1.bin')
+m1.load('m1.bin')
